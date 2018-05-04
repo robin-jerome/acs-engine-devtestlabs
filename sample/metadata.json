@@ -1,0 +1,7 @@
+{
+    "itemDisplayName": "Azure Container Engine Template - Kubernetes",
+    "description": "Template will deploy k8s cluster. Updated azuredeploy.json ",
+    "summary": "Custom generated template for deploying kubernetes",
+    "githubUsername": "robin-jerome",
+    "dateUpdated": "2017-03-21"
+}

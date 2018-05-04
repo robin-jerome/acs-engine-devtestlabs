@@ -1,0 +1,315 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "agentpool1Count": {
+      "value": 3
+    },
+    "agentpool1Subnet": {
+      "value": "10.240.0.0/12"
+    },
+    "agentpool1VMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "agentpool1osImageOffer": {
+      "value": "UbuntuServer"
+    },
+    "agentpool1osImagePublisher": {
+      "value": "Canonical"
+    },
+    "agentpool1osImageSKU": {
+      "value": "16.04-LTS"
+    },
+    "agentpool1osImageVersion": {
+      "value": "16.04.201804050"
+    },
+    "apiServerCertificate": {
+      "value": "<placeholder>"
+    },
+    "apiServerPrivateKey": {
+      "value": "<placeholder>"
+    },
+    "caCertificate": {
+      "value": "<placeholder>"
+    },
+    "caPrivateKey": {
+      "value": "<placeholder>"
+    },
+    "clientCertificate": {
+      "value": "<placeholder>"
+    },
+    "clientPrivateKey": {
+      "value": "<placeholder>"
+    },
+    "cloudProviderBackoff": {
+      "value": "false"
+    },
+    "cloudProviderBackoffDuration": {
+      "value": "0"
+    },
+    "cloudProviderBackoffExponent": {
+      "value": "0"
+    },
+    "cloudProviderBackoffJitter": {
+      "value": "0"
+    },
+    "cloudProviderBackoffRetries": {
+      "value": "0"
+    },
+    "cloudProviderRatelimit": {
+      "value": "false"
+    },
+    "cloudProviderRatelimitBucket": {
+      "value": "0"
+    },
+    "cloudProviderRatelimitQPS": {
+      "value": "0"
+    },
+    "cniPluginsURL": {
+      "value": "https://acs-mirror.azureedge.net/cni/cni-plugins-amd64-v0.7.0.tgz"
+    },
+    "containerRuntime": {
+      "value": "docker"
+    },
+    "dockerBridgeCidr": {
+      "value": "172.17.0.1/16"
+    },
+    "dockerEngineDownloadRepo": {
+      "value": "https://aptdocker.azureedge.net/repo"
+    },
+    "dockerEngineVersion": {
+      "value": "1.13.*"
+    },
+    "etcdClientCertificate": {
+      "value": "<placeholder>"
+    },
+    "etcdClientPrivateKey": {
+      "value": "<placeholder>"
+    },
+    "etcdDiskSizeGB": {
+      "value": "256"
+    },
+    "etcdDownloadURLBase": {
+      "value": "https://acs-mirror.azureedge.net/github-coreos"
+    },
+    "etcdPeerCertificate0": {
+      "value": "<placeholder>"
+    },
+    "etcdPeerPrivateKey0": {
+      "value": "<placeholder>"
+    },
+    "etcdServerCertificate": {
+      "value": "<placeholder>"
+    },
+    "etcdServerPrivateKey": {
+      "value": "<placeholder>"
+    },
+    "etcdVersion": {
+      "value": "3.2.16"
+    },
+    "firstConsecutiveStaticIP": {
+      "value": "10.255.255.5"
+    },
+    "fqdnEndpointSuffix": {
+      "value": "cloudapp.azure.com"
+    },
+    "gchighthreshold": {
+      "value": 85
+    },
+    "gclowthreshold": {
+      "value": 80
+    },
+    "generatorCode": {
+      "value": "acsengine"
+    },
+    "kubeClusterCidr": {
+      "value": "10.240.0.0/12"
+    },
+    "kubeConfigCertificate": {
+      "value": "<placeholder>"
+    },
+    "kubeConfigPrivateKey": {
+      "value": "<placeholder>"
+    },
+    "kubeDNSServiceIP": {
+      "value": "10.0.0.10"
+    },
+    "kubeServiceCidr": {
+      "value": "10.0.0.0/16"
+    },
+    "kubernetesACIConnectorCPULimit": {
+      "value": "50m"
+    },
+    "kubernetesACIConnectorCPURequests": {
+      "value": "50m"
+    },
+    "kubernetesACIConnectorClientId": {
+      "value": ""
+    },
+    "kubernetesACIConnectorClientKey": {
+      "value": ""
+    },
+    "kubernetesACIConnectorMemoryLimit": {
+      "value": "150Mi"
+    },
+    "kubernetesACIConnectorMemoryRequests": {
+      "value": "150Mi"
+    },
+    "kubernetesACIConnectorNodeName": {
+      "value": "aci-connector"
+    },
+    "kubernetesACIConnectorOS": {
+      "value": "Linux"
+    },
+    "kubernetesACIConnectorRegion": {
+      "value": "westus"
+    },
+    "kubernetesACIConnectorResourceGroup": {
+      "value": ""
+    },
+    "kubernetesACIConnectorSpec": {
+      "value": "microsoft/virtual-kubelet:latest"
+    },
+    "kubernetesACIConnectorSubscriptionId": {
+      "value": ""
+    },
+    "kubernetesACIConnectorTaint": {
+      "value": "azure.com/aci"
+    },
+    "kubernetesACIConnectorTenantId": {
+      "value": ""
+    },
+    "kubernetesAddonManagerSpec": {
+      "value": "k8s-gcrio.azureedge.net/kube-addon-manager-amd64:v8.6"
+    },
+    "kubernetesAddonResizerSpec": {
+      "value": "k8s-gcrio.azureedge.net/addon-resizer:1.7"
+    },
+    "kubernetesDNSMasqSpec": {
+      "value": "k8s-gcrio.azureedge.net/k8s-dns-dnsmasq-nanny-amd64:1.14.8"
+    },
+    "kubernetesDashboardCPULimit": {
+      "value": "300m"
+    },
+    "kubernetesDashboardCPURequests": {
+      "value": "300m"
+    },
+    "kubernetesDashboardMemoryLimit": {
+      "value": "150Mi"
+    },
+    "kubernetesDashboardMemoryRequests": {
+      "value": "150Mi"
+    },
+    "kubernetesDashboardSpec": {
+      "value": "k8s-gcrio.azureedge.net/kubernetes-dashboard-amd64:v1.8.3"
+    },
+    "kubernetesExecHealthzSpec": {
+      "value": "k8s-gcrio.azureedge.net/exechealthz-amd64:1.2"
+    },
+    "kubernetesHeapsterSpec": {
+      "value": "k8s-gcrio.azureedge.net/heapster-amd64:v1.5.1"
+    },
+    "kubernetesHyperkubeSpec": {
+      "value": "k8s-gcrio.azureedge.net/hyperkube-amd64:v1.8.11"
+    },
+    "kubernetesKubeDNSSpec": {
+      "value": "k8s-gcrio.azureedge.net/k8s-dns-kube-dns-amd64:1.14.8"
+    },
+    "kubernetesKubeletClusterDomain": {
+      "value": "cluster.local"
+    },
+    "kubernetesMetricsServerSpec": {
+      "value": "k8s-gcrio.azureedge.net/metrics-server-amd64:v0.2.1"
+    },
+    "kubernetesNonMasqueradeCidr": {
+      "value": "10.240.0.0/12"
+    },
+    "kubernetesPodInfraContainerSpec": {
+      "value": "k8s-gcrio.azureedge.net/pause-amd64:3.1"
+    },
+    "kubernetesReschedulerCPULimit": {
+      "value": "10m"
+    },
+    "kubernetesReschedulerCPURequests": {
+      "value": "10m"
+    },
+    "kubernetesReschedulerMemoryLimit": {
+      "value": "100Mi"
+    },
+    "kubernetesReschedulerMemoryRequests": {
+      "value": "100Mi"
+    },
+    "kubernetesReschedulerSpec": {
+      "value": "k8s-gcrio.azureedge.net/rescheduler:v0.3.1"
+    },
+    "kubernetesTillerCPULimit": {
+      "value": "50m"
+    },
+    "kubernetesTillerCPURequests": {
+      "value": "50m"
+    },
+    "kubernetesTillerMaxHistory": {
+      "value": "0"
+    },
+    "kubernetesTillerMemoryLimit": {
+      "value": "150Mi"
+    },
+    "kubernetesTillerMemoryRequests": {
+      "value": "150Mi"
+    },
+    "kubernetesTillerSpec": {
+      "value": "gcrio.azureedge.net/kubernetes-helm/tiller:v2.8.1"
+    },
+    "linuxAdminUsername": {
+      "value": "azureuser"
+    },
+    "location": {
+      "value": ""
+    },
+    "masterEndpointDNSNamePrefix": {
+      "value": "<dns-prefix>"
+    },
+    "masterSubnet": {
+      "value": "10.240.0.0/12"
+    },
+    "masterVMSize": {
+      "value": "Standard_D2_v2"
+    },
+    "networkPolicy": {
+      "value": "azure"
+    },
+    "orchestratorName": {
+      "value": "k8s"
+    },
+    "osImageOffer": {
+      "value": "UbuntuServer"
+    },
+    "osImagePublisher": {
+      "value": "Canonical"
+    },
+    "osImageSKU": {
+      "value": "16.04-LTS"
+    },
+    "osImageVersion": {
+      "value": "16.04.201804050"
+    },
+    "servicePrincipalClientId": {
+      "value": "<placeholder>"
+    },
+    "servicePrincipalClientSecret": {
+      "value": "<placeholder>"
+    },
+    "sshRSAPublicKey": {
+      "value": "<placeholder>"
+    },
+    "targetEnvironment": {
+      "value": "AzurePublicCloud"
+    },
+    "vnetCniLinuxPluginsURL": {
+      "value": "https://acs-mirror.azureedge.net/cni/azure-vnet-cni-linux-amd64-v1.0.2.tgz"
+    },
+    "vnetCniWindowsPluginsURL": {
+      "value": "https://acs-mirror.azureedge.net/cni/azure-vnet-cni-windows-amd64-v1.0.2.zip"
+    }
+  }
+}
